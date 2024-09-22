@@ -12,3 +12,8 @@ def fibonacci2(n):
         return 1
 
     return n + fibonacci2(n - 1)
+
+
+# Time: O(n)
+# Space: O(n)
+

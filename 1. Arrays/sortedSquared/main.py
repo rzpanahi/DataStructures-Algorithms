@@ -3,19 +3,18 @@
 # returns a new array with the squares of each number sorted in ascending order.
 
 
-
 # 1
 def sorted_squared(arr: list):
     squared_arr = list()
 
     for i, number in enumerate(arr):
-        squared_arr[i] = number ** 2
+        squared_arr[i] = number**2
 
     return squared_arr.sort()
 
+
 # Time : O(nlogn)
 # Space : O(n)
-
 
 
 # 2
@@ -31,13 +30,14 @@ def sorted_squared2(arr: list):
         if square_end > square_start:
             new_arr[k] = square_end
 
-            end = end -1
+            end = end - 1
         else:
             new_arr[k] = square_start
 
             start = start + 1
 
     return new_arr
+
 
 # Time : O(n)
 # Space : O(n)

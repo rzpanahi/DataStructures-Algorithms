@@ -29,3 +29,7 @@ def permutations(array: list):
 
     helper(0)
     return result
+
+
+# Time: O(n * n!) => we copy the full array (n) n! times (which is number of all possible permutations)
+# Space: O(n) => length of call stack is n at max

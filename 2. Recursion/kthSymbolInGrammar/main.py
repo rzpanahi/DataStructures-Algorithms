@@ -16,3 +16,7 @@ def func(k, n):
         return func(k, n - 1)
     else:
         return int(not func(k - mid, n - 1))
+
+
+# Time: O(n)
+# Space: O(n)
